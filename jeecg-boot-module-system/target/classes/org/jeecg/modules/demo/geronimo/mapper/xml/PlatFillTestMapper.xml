@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.demo.geronimo.mapper.PlatFillTestMapper">
+    <sql id="Join_Column_List">
+        <!--@mbg.generated-->
+        plat_fill_test.id as plat_fill_test_id,
+        plat_fill_test.task_id as plat_fill_test_task_id,
+        plat_fill_test.user_id as plat_fill_test_user_id,
+        plat_fill_test.fill_date as plat_fill_test_fill_date,
+        plat_fill_test.form_data as plat_fill_test_form_data
+    </sql>
+    <resultMap id="JoinResultMap" type="org.jeecg.modules.demo.geronimo.entity.PlatFillTest">
+        <!--@mbg.generated-->
+        <id column="plat_fill_test_id" property="id"/>
+        <result column="plat_fill_test_task_id" property="taskId"/>
+        <result column="plat_fill_test_user_id" property="userId"/>
+        <result column="plat_fill_test_fill_date" property="fillDate"/>
+        <result column="plat_fill_test_form_data" property="formData"/>
+    </resultMap>
+</mapper>
